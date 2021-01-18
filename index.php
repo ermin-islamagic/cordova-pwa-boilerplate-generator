@@ -46,6 +46,7 @@ if (!empty($_FILES)) {
     if (!file_exists($fulluploaddir)) {
         mkdir($cwd . DIRECTORY_SEPARATOR . $fulluploaddir, 0755, true);
     }
+    @chmod($cwd . DIRECTORY_SEPARATOR . $fulluploaddir, 0755);
 
     $file = fopen($cwd . DIRECTORY_SEPARATOR . $uploaddir . DIRECTORY_SEPARATOR . 'index.html', 'w') or die('fail on upload');
     fclose($file);
@@ -96,6 +97,9 @@ $app_uid_link = $GENERATOR_DOMAIN_TYPE === 'single' ?
 $cordova_files_path = getcwd() . DIRECTORY_SEPARATOR . 'template';
 //this folder must be writeable by the server
 $cordova_path = getcwd() . DIRECTORY_SEPARATOR . 'cordova';
+if (!file_exists($fulluploaddir)) {
+    mkdir($cordova_path, 0755, true);
+}
 @chmod($cordova_path, 0755);
 $zip_file = $cordova_path . DIRECTORY_SEPARATOR . $app_name . ' - cordova files ' . date('d-m-Y') . '.zip';
 
