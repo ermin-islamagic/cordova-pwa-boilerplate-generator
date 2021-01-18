@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="$mobile_application_namespace$" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>$business_name$</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="$mobile_application_subdomain$" />
+    <preference name="Fullscreen" value="true" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon background="res/icon/android/res/mipmap-ldpi/ic_launcher_background.png" density="ldpi" foreground="res/icon/android/res/mipmap-ldpi/ic_launcher_foreground.png"/>
+        <icon background="res/icon/android/res/mipmap-mdpi/ic_launcher_background.png" density="mdpi" foreground="res/icon/android/res/mipmap-mdpi/ic_launcher_foreground.png"/>
+        <icon background="res/icon/android/res/mipmap-hdpi/ic_launcher_background.png" density="hdpi" foreground="res/icon/android/res/mipmap-hdpi/ic_launcher_foreground.png"/>
+        <icon background="res/icon/android/res/mipmap-xhdpi/ic_launcher_background.png" density="xhdpi" foreground="res/icon/android/res/mipmap-xhdpi/ic_launcher_foreground.png"/>
+        <icon background="res/icon/android/res/mipmap-xxhdpi/ic_launcher_background.png" density="xxhdpi" foreground="res/icon/android/res/mipmap-xxhdpi/ic_launcher_foreground.png"/>
+        <icon background="res/icon/android/res/mipmap-xxxhdpi/ic_launcher_background.png" density="xxxhdpi" foreground="res/icon/android/res/mipmap-xxxhdpi/ic_launcher_foreground.png"/>
+    </platform>
+    <platform name="ios">
+        <!-- 360° street view -->
+        <allow-navigation href="https://www.google.com/maps/*" />
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
