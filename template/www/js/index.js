@@ -15,7 +15,7 @@ var app = {
         var targetUrl = "$mobile_application_subdomain$";
         var bkpLink = document.getElementById("bkpLink");
         bkpLink.setAttribute("href", targetUrl);
-        bkpLink.text = targetUrl;
+        // bkpLink.text = targetUrl;
         window.location.replace(targetUrl);
     },
 

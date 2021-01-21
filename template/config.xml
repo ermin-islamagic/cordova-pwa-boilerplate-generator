@@ -20,12 +20,23 @@
     <preference name="Fullscreen" value="true" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon background="res/icon/android/res/mipmap-ldpi/ic_launcher_background.png" density="ldpi" foreground="res/icon/android/res/mipmap-ldpi/ic_launcher_foreground.png"/>
-        <icon background="res/icon/android/res/mipmap-mdpi/ic_launcher_background.png" density="mdpi" foreground="res/icon/android/res/mipmap-mdpi/ic_launcher_foreground.png"/>
-        <icon background="res/icon/android/res/mipmap-hdpi/ic_launcher_background.png" density="hdpi" foreground="res/icon/android/res/mipmap-hdpi/ic_launcher_foreground.png"/>
-        <icon background="res/icon/android/res/mipmap-xhdpi/ic_launcher_background.png" density="xhdpi" foreground="res/icon/android/res/mipmap-xhdpi/ic_launcher_foreground.png"/>
-        <icon background="res/icon/android/res/mipmap-xxhdpi/ic_launcher_background.png" density="xxhdpi" foreground="res/icon/android/res/mipmap-xxhdpi/ic_launcher_foreground.png"/>
-        <icon background="res/icon/android/res/mipmap-xxxhdpi/ic_launcher_background.png" density="xxxhdpi" foreground="res/icon/android/res/mipmap-xxxhdpi/ic_launcher_foreground.png"/>
+
+        <icon background="res/android/res/mipmap-mdpi/ic_launcher.png"
+              foreground="res/android/res/mipmap-mdpi/ic_launcher_foreground.png"
+              platform="android"
+              density="mdpi"/>
+        <icon background="res/android/res/mipmap-xhdpi/ic_launcher.png"
+              foreground="res/android/res/mipmap-xhdpi/ic_launcher_foreground.png"
+              platform="android"
+              density="xhdpi"/>
+        <icon background="res/android/res/mipmap-xxhdpi/ic_launcher.png"
+              foreground="res/android/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+              platform="android"
+              density="xxhdpi"/>
+        <icon background="res/android/res/mipmap-xxxhdpi/ic_launcher.png"
+              foreground="res/android/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+              platform="android"
+              density="xxxhdpi"/>
     </platform>
     <platform name="ios">
         <!-- 360° street view -->
